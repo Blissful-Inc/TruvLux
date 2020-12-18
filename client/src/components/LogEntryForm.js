@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import React, {useState} from 'react';
+import {useForm} from 'react-hook-form';
 
-import { createLogEntry } from '../API';
+import {createLogEntry} from '../API';
 
-const LogEntryForm = ({ location, onClose }) => {
+const LogEntryForm = ({location, onClose}) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const { register, handleSubmit } = useForm();
+  const {register, handleSubmit} = useForm();
 
   const onSubmit = async (data) => {
     try {
@@ -37,9 +37,15 @@ const LogEntryForm = ({ location, onClose }) => {
       <input name="image" ref={register} />
       <label htmlFor="visitDate">Visit Date</label>
       <input name="visitDate" type="date" required ref={register} />
-      <button disabled={loading}>{loading ? 'Loading...' : 'Create Entry'}</button>
+      <button disabled={loading}>{loading ?
+        'Loading...' : 'Create Entry'}</button>
     </form>
   );
 };
 
 export default LogEntryForm;
+
+LogEntryForm.propTypes = {
+  location: PropTypes.string.isRequired,
+  onClose: PropTypes.string.isRequired,
+};
