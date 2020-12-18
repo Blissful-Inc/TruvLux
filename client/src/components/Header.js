@@ -1,12 +1,6 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
-  container: {
-    background: 'red',
-    alignItems: 'center',
-  },
-});
+import {NavLink} from 'react-router-dom';
+import '../css/Header.css';
 
 
 /**
@@ -14,12 +8,21 @@ const useStyles = makeStyles({
  * @return{void}
  */
 function Header() {
-  const styles = useStyles();
-
   return (
-    <div className={styles.container}>
-      <h1>Header</h1>
-    </div>
+    <React.Fragment>
+      <NavLink to="/" className="home">Truvlux</NavLink>
+      <div className="container">
+        <div>
+          <NavLink to="/" className="link">Depart</NavLink>
+          <NavLink to="/" className="link">Logs</NavLink>
+          <NavLink to="/" className="link">Feed</NavLink>
+          <NavLink to="/map" className="link">Map</NavLink>
+        </div>
+        {/* <h1 className="header">Header</h1> */}
+      </div>
+    </React.Fragment>
+
+
   );
 }
 

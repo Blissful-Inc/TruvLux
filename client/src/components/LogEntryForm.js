@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, {useState} from 'react';
 import {useForm} from 'react-hook-form';
 
@@ -45,7 +46,7 @@ const LogEntryForm = ({location, onClose}) => {
 
 export default LogEntryForm;
 
-LogEntryForm.propTypes = {
-  location: PropTypes.string.isRequired,
-  onClose: PropTypes.string.isRequired,
-};
+// LogEntryForm.propTypes = {
+//   location: PropTypes.string.isRequired,
+//   onClose: PropTypes.string.isRequired,
+// };

@@ -1,0 +1,39 @@
+.container {
+    background: #143642;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header {
+    background: #143642;
+    color: center;
+    text-align: center;
+}
+
+.link {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 13px;
+    text-decoration-thickness: 3px;
+}
+
+
+.home {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 60px;
+    margin-right: -180px;
+    text-decoration: none;
+    padding: 25px;
+}

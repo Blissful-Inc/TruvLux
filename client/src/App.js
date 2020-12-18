@@ -1,7 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Welcome from "./components/Welcome";
+import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Welcome from './components/Welcome';
 import NotFoundPage from './components/NotFoundPage';
+import MapClient from './components/MapClient';
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
           </Route>
           <Route path="/404">
             <NotFoundPage />
+          </Route>
+          <Route exact path="/map">
+            <MapClient />
           </Route>
         </Switch>
       </Router>

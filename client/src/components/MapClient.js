@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 
 import {listLogEntries} from '../API';
-import LogEntryForm from '../LogEntryForm';
+import LogEntryForm from './LogEntryForm';
 
 const MapClient = () => {
   const [logEntries, setLogEntries] = useState([]);
@@ -18,6 +18,7 @@ const MapClient = () => {
 
   const getEntries = async () => {
     const logEntries = await listLogEntries();
+    console.log(logEntries);
     setLogEntries(logEntries);
   };
 
