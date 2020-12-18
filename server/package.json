@@ -8,23 +8,24 @@
     "dev": "nodemon src/index.js",
     "lint": "eslint src/"
   },
-  "keywords": [
-    "truvlux"
-  ],
-  "author": "",
-  "license": "ISC",
+  "keywords": [],
+  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^3.21.3",
-    "mongoose": "^5.10.15",
-    "morgan": "^1.10.0"
+    "express-rate-limit": "^5.1.3",
+    "helmet": "^3.22.0",
+    "mongoose": "^5.9.11",
+    "morgan": "^1.10.0",
+    "node": "^15.4.0",
+    "rate-limit-mongo": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "nodemon": "^2.0.2"
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
   }
 }
