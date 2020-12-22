@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import '../css/Header.css';
 
-
 /**
  * Header Component
  * @return{void}
@@ -18,11 +17,8 @@ function Header() {
           <NavLink to="/" className="link">Feed</NavLink>
           <NavLink to="/map" className="link">Map</NavLink>
         </div>
-        {/* <h1 className="header">Header</h1> */}
       </div>
     </React.Fragment>
-
-
   );
 }
 

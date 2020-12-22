@@ -5,12 +5,6 @@
     padding: 25px;
 }
 
-.header {
-    background: #143642;
-    color: center;
-    text-align: center;
-}
-
 .link {
     font-size: 20px;
     font-weight: bold;
@@ -32,8 +26,13 @@
     font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-left: 60px;
+    margin-left: 120px;
     margin-right: -180px;
     text-decoration: none;
-    padding: 25px;
+    padding-top: 17px;
+}
+
+.home:hover {
+    opacity: 0.5;
+
 }

@@ -4,13 +4,18 @@ import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import {listLogEntries} from '../API';
 import LogEntryForm from './LogEntryForm';
 
-const MapClient = () => {
+/**
+ * @param  {any} props
+ * @return {void}
+ */
+function MapClient(props) {
+  // const {()}
   const [logEntries, setLogEntries] = useState([]);
   const [showPopup, setShowPopup] = useState({});
   const [addEntryLocation, setAddEntryLocation] = useState(null);
   const [viewport, setViewport] = useState({
-    width: '100vw',
-    height: '100vh',
+    width: {mapSizeWidth} + 'vw',
+    height: {mapSizeHeight} + 'vh',
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3,

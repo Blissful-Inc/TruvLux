@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Welcome from './components/Welcome';
 import NotFoundPage from './components/NotFoundPage';
-import MapClient from './components/MapClient';
+import MapPage from './components/MapPage';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
             <NotFoundPage />
           </Route>
           <Route exact path="/map">
-            <MapClient />
+            <MapPage />
           </Route>
         </Switch>
       </Router>

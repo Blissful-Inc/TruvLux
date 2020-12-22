@@ -7,8 +7,9 @@ const useStyles = makeStyles({
   container: {
     textAlign: 'center',
   },
-  heading: {
+  banner: {
     textAlign: 'center',
+    padding: '30px',
   },
 });
 
@@ -17,7 +18,7 @@ const Welcome = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <h1 className={styles.heading}> Home Page ! </h1>
+      <h1 className={styles.banner}> Home Page ! </h1>
       <p>Where the fun begins</p>
     </div>
   );
