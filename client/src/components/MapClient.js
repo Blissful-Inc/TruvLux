@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, {useState, useEffect} from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 
@@ -8,14 +9,13 @@ import LogEntryForm from './LogEntryForm';
  * @param  {any} props
  * @return {void}
  */
-function MapClient(props) {
-  // const {()}
+const MapClient = (props) => {
   const [logEntries, setLogEntries] = useState([]);
   const [showPopup, setShowPopup] = useState({});
   const [addEntryLocation, setAddEntryLocation] = useState(null);
   const [viewport, setViewport] = useState({
-    width: {mapSizeWidth} + 'vw',
-    height: {mapSizeHeight} + 'vh',
+    width: props.mapSizeWidth + 'px',
+    height: props.mapSizeHeight + 'px',
     latitude: 37.6,
     longitude: -95.665,
     zoom: 3,

@@ -1,5 +1,5 @@
 .container {
-    background: #143642;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(112,112,112,0.633473457742472) 0%, rgba(255,255,255,1) 100%);
     color: white;
     text-align: center;
     padding: 25px;
