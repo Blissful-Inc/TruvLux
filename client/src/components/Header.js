@@ -12,9 +12,9 @@ function Header() {
       <NavLink to="/" className="home">Truvlux</NavLink>
       <div className="container">
         <div>
-          <NavLink to="/" className="link">Depart</NavLink>
-          <NavLink to="/" className="link">Logs</NavLink>
-          <NavLink to="/" className="link">Feed</NavLink>
+          <NavLink to="/departure" className="link">Departure</NavLink>
+          <NavLink to="/logs" className="link">Logs</NavLink>
+          <NavLink to="/feed" className="link">Feed</NavLink>
           <NavLink to="/map" className="link">Map</NavLink>
         </div>
       </div>
