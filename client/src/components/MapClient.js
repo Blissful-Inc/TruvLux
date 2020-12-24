@@ -23,7 +23,7 @@ const MapClient = (props) => {
 
   const getEntries = async () => {
     const logEntries = await listLogEntries();
-    console.log(logEntries);
+    // console.log(logEntries);
     setLogEntries(logEntries);
   };
 

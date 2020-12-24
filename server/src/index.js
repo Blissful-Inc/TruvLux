@@ -13,9 +13,16 @@ const app = express();
 
 app.enable('trust proxy'); // needed for rate limiting by Client IP
 
-mongoose.connect(process.env.DATABASE_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+// mongodb connection | user: root, pass: admin
+mongoose.connect(
+    `mongodb+srv://admin:admin@cluster0.cozlq.mongodb.net/truvlux?retryWrites=true&w=majority`, 
+    {
+        useNewUrlParser: true, 
+        useUnifiedTopology: true,
+        useCreateIndex: true
+    }
+).then(() => {
+    console.log('Database connected');
 });
 
 app.use(morgan('common'));
