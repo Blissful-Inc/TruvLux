@@ -18,6 +18,8 @@ const useStyles = makeStyles({
     flex: 1,
     border: '2px solid black',
     margin: '0 auto',
+    background: 'white',
+
   },
   banner: {
     flex: 1,
@@ -31,6 +33,22 @@ const Welcome = () => {
   return (
     <div className={styles.container}>
       <Header />
+      <div className={styles.outer}>
+        <div className={styles.block}>
+          <div className={styles.inner}>
+            <h1 className={styles.banner}> Home Page ! </h1>
+            <p>Where the fun begins</p>
+          </div>
+          <div className={styles.inner}>
+            <h1 className={styles.banner}> Home Page ! </h1>
+            <p>Where the fun begins</p>
+          </div>
+          <div className={styles.inner}>
+            <h1 className={styles.banner}> Home Page ! </h1>
+            <p>Where the fun begins</p>
+          </div>
+        </div>
+      </div>
       <div className={styles.outer}>
         <div className={styles.block}>
           <div className={styles.inner}>

@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   },
   inner: {
     display: 'flex',
-    padding: '40px',
+    padding: '80px',
   },
   block1: {
     flex: 1,
@@ -17,6 +17,7 @@ const useStyles = makeStyles({
     width: '80%',
     height: 'auto',
     margin: '0 auto',
+    background: 'white',
   },
   block2: {
     flex: 2,
@@ -25,6 +26,8 @@ const useStyles = makeStyles({
     width: '80%',
     height: 'auto',
     margin: '0 auto',
+    background: 'white',
+
   },
   banner: {
     textAlign: 'center',

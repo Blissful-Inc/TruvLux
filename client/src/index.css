@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +5,12 @@ body {
     sans-serif;
   height: 100vh;
   width: 100vw;
-  /* background-image: url('https://cdn.pixabay.com/photo/2017/08/19/16/09/canal-2659062_960_720.jpg'); */
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255)), url('./images/backgrounds/brandenburg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%;
+  background-position: right 0px bottom 10px, right 0px bottom 10px;
 }
+
 
 .marker {
   transform: translate(-50%, -100%);
@@ -22,7 +25,7 @@ body {
 }
 
 .marker.yellow path {
-  fill: #F3B73E;
+  fill: #f3b73e;
 }
 
 .popup {

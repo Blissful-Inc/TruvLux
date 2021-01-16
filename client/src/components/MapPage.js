@@ -92,7 +92,6 @@ function MapPage() {
   const classes = useStyles();
   const [posts, setPosts] = useState([]);
 
-
   useEffect(() => {
     loadData();
   }, []);
